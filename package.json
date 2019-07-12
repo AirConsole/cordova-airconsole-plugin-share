@@ -1,0 +1,17 @@
+{
+  "name": "cordova-airconsole-plugin-share",
+  "version": "1.0.0",
+  "description": "Shares a text with other apps",
+  "cordova": {
+    "id": "cordova-airconsole-plugin-share",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "android",
+    "cordova",
+    "share",
+    "plugin"
+  ]
+}

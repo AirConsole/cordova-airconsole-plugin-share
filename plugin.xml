@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-airconsole-plugin-share"
+    version="1.0.1">
+  <name>Android Share Plugin</name>
+  <description>Android Share Plugin</description>
+  <license>Apache 2.0</license>
+  <keywords>share</keywords>
+
+  <js-module src="www/CordovaPluginShare.js" name="CordovaPluginShare">
+      <clobbers target="window.CordovaSharePlugin" />
+  </js-module>
+
+  <platform name="android">
+
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="CordovaPluginShare">
+        <param name="android-package" value="com.airconsole.plugin.share.CordovaPluginShare"/>
+      </feature>
+    </config-file>
+
+    <source-file src="src/android/CordovaPluginShare.java" target-dir="src/com/airconsole/plugin/share" />
+
+  </platform>
+</plugin>
